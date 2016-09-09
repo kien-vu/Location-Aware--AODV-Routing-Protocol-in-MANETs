@@ -1,0 +1,25 @@
+diff -u -r --new-file ./Makefile ../../ns-2.33-hls_working/ns-2.33/Makefile
+--- ./Makefile	2005-10-20 06:45:22.000000000 +0200
++++ ../../ns-2.33-hls_working/ns-2.33/Makefile	2006-04-05 15:14:18.000000000 +0200
+@@ -323,6 +323,21 @@
+	wpan/p802_15_4sscs.o wpan/p802_15_4timer.o \
+	wpan/p802_15_4trace.o wpan/p802_15_4transac.o \
+	apps/pbc.o \
++	\
++	locservices/hdr_locs.o \
++	locservices/realocservice.o locservices/omnilocservice.o locservices/gridlocservice.o \
++	locservices/ls_queued_timer.o \
++	locservices/chc.o locservices/chc_caches.o \
++	\
++	mobile/geo_util.o \
++	\
++	hls/hls.o \
++	hls/quadratic.o \
++	hls/hls_basic.o \
++	hls/hls_advanced.o \
++	\
++	gpsr/gpsr.o \
++	\
+ 	$(OBJ_STL)
+
+
